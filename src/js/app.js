@@ -1,6 +1,6 @@
 // TODO: write code here
 
-console.log('app.js bundled');
+// console.log('app.js bundled');
 
 const popoverButton = document.getElementById("popoverButton");
 const popoverContent = document.getElementById("popoverContent");
@@ -8,8 +8,8 @@ const popoverContent = document.getElementById("popoverContent");
 function showPopover() {
     const buttonRect = popoverButton.getBoundingClientRect();
     popoverContent.style.display = "block";
-    popoverContent.style.top = `${buttonRect.top - popoverContent.clientHeight}px`; // Позиционируем сверху от кнопки
-    popoverContent.style.left = `${buttonRect.left}px`; // Позиционируем слева от кнопки
+    popoverContent.style.top = `${buttonRect.top - popoverContent.clientHeight}px`; 
+    popoverContent.style.left = `${buttonRect.left}px`; 
 }
 
 function hidePopover() {
